@@ -1,0 +1,35 @@
+####################################
+# SERVICE DEPENDENCIES
+####################################
+
+####################################
+# Artifactory Setup
+--index-url https://pypi.org/simple
+--extra-index-url https://artifactory.concurtech.net/artifactory/api/pypi/pypi-sandbox/simple
+####################################
+
+####################################
+# Private Python Libraries
+concurlogging~=1.0.6
+concurdatascience~=0.16.40
+####################################
+
+####################################
+# Common Dependencies
+Flask
+uWSGI
+uwsgitop
+newrelic
+marshmallow~=3.21.1
+unittest-xml-reporting~=3.2.0
+####################################
+
+####################################
+# Service-specific Dependencies
+pandas~=2.2.0
+numpy~=1.26.1
+scikit-learn~=1.4.2
+joblib==1.4.0
+onnxruntime~=1.17
+schedule~=1.2.1
+####################################
